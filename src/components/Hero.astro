@@ -1,0 +1,46 @@
+---
+import Navbar from "./Navbar.astro"
+---
+
+<style>
+    .hero{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('retrato.jpg');
+    }
+    .parrafo{
+        line-height: 64px;
+        font-size :76px
+    }
+    @keyframes slide {
+        from {
+            transform :translateX(0)
+        }
+        to{
+            transform :translateX(-100%)
+        }
+    }
+
+    .carousel {
+        animation : 30s slide infinite linear;
+        font-size: 148px;
+        user-select: none;
+    }
+
+</style>
+
+<section class="hero h-screen relative overflow-hidden">
+    <Navbar/>
+    <div class="w-3/5 m-auto text-white">
+        <p class="parrafo mb-6 font-bold tracking-tight text-wrap leading-tight">Creative Strategist and Visual Designer currently based in Barcelona</p>
+        <button class="rounded-full text-2xl px-6 py-2 font-bold bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30">See Projects</button>
+    </div>
+    <div class='absolute mb-[-54px] flex text-nowrap text-white left-0 bottom-0'>
+        <div class="carousel">
+            <div class="flex">ALEJANDRO SANTAMARIA <img class="w-[100px]" src="./asterisco.png" alt=""> FULL STACK DEVELOPER <img class="w-[300px]" src="./asterisco.png" alt=""> &nbsp; </div> 
+        </div>
+        <div class="carousel">
+            <div class="flex">  &nbsp;ALEJANDRO SANTAMARIA <img class="w-[100px]" src="./asterisco.png" alt=""> FULL STACK DEVELOPER <img class="w-[100px]" src="./asterisco.png" alt=""></div>
+        </div>
+    </div>
+   
+   
+</section>

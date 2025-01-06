@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<style>
+    .titulo{
+        font-size: 124px;
+    }
+</style>
+
+
+<Layout>
+<section class="px-16">
+    <h1 class="titulo">Physioenforma</h1>
+    <div class="h-[500px] w-full">
+        <img class="w-full h-full rounded-2xl object-contain" src="./retrato.jpg" alt="">
+        <div class="grid grid-cols-4 mt-12">
+            <div class="col-span-2">
+                <h2 class="text-8xl mb-6 leading-10">About the project</h2>
+                <div class="flex gap-4">
+                    <button class="rounded-full text-xl px-6 py-2 bg-gray-400 font-bold bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30">See Live</button>
+                    <button class="rounded-full text-xl px-6 py-2 bg-gray-400 font-bold bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30">Github Repo</button>
+                </div>
+                
+            </div>
+            <div class="col-span-2">
+                <div class="mb-6">
+                    <h3 class="text-4xl mb-4">Requirements</h3>
+                    <p class="text-2xl leading-6 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nesciunt! Amet inventore aut, consequuntur aliquam quaerat cum ex alias? Dolore est blanditiis consequatur atque ducimus odit optio itaque harum mollitia!</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-4xl mb-4">Approach</h3>
+                    <p class="text-2xl leading-6 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nesciunt! Amet inventore aut, consequuntur aliquam quaerat cum ex alias? Dolore est blanditiis consequatur atque ducimus odit optio itaque harum mollitia!</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl mb-4">Tecnologies used</h3>
+                    <div class="flex gap-4 mb-4">
+                        <span class="border border-gray-700 px-6 py-2 rounded-full">Javascript</span>
+                        <span class="border border-gray-700 px-6 py-2 rounded-full">Astro</span>
+                        <span class="border border-gray-700 px-6 py-2 rounded-full">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</Layout>
