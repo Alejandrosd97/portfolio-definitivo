@@ -1,0 +1,16 @@
+.cursor{
+    width:24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    position:fixed;
+    transition: 0.01s;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+    z-index: 10;
+    mix-blend-mode: difference;
+}
+
+p:hover ~ .cursor {
+    transform : scale(3);
+}

@@ -1,5 +1,8 @@
 ---
 	import '@fontsource-variable/darker-grotesque'
+	import Cursor from '../components/Cursor.astro';
+	import '../css/index.css'
+
 ---
 
 <!doctype html>
@@ -12,6 +15,7 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Cursor/>
 		<slot />
 	</body>
 </html>
@@ -22,7 +26,16 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
-		font-family: 'Darker Grotesque Variable', sans-serif;}
+		font-family: 'Darker Grotesque Variable', sans-serif;
+		background-color: white;
+		cursor: none
+	}
+
+	p:hover ~ .cursor {
+		background-color: red;
+	}
+
+	
 
 	
 </style>
